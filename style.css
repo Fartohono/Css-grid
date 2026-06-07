@@ -1,9 +1,14 @@
 
+body{
+    background-color:#faf6f6;
+}
 .container {
     width: 1200px;
     outline: 2px dashed red;
+    border-radius: 3px;
     margin: 0 auto;
     padding: 0 15px;
+    background-color: aliceblue;
 }
 .header .container{
 display:flex;
@@ -19,6 +24,21 @@ padding-bottom: 15px;
 .header-list{
     display: flex;
     gap: 135px;
+}
+.header-item :hover{
+color: aquamarine;
+}
+.logo :hover{
+color: aquamarine;    
+}
+.contacts-item :hover{
+    color: aquamarine;
+}
+a:link,
+a:visited,
+a:active {
+    color: #222;
+    text-decoration: none;
 }
 .hero .container{
 display: flex;
@@ -60,6 +80,45 @@ margin-bottom: 50px;
 .about-info{
 letter-spacing: 0.75px;
 }
-.gallery .container{
-background-color: lightblue;
+.gallery {
+    padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.card {
+  padding: 15px;
+  border: 1px dashed #5b9bd5;
+  border-radius: 8px;
+}
+
+.preview {
+  height: 120px;
+  background: #cfe2f3;
+color: rgb(2, 94, 120);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  background: #3d85c6;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.featured {
+  grid-column: span 2;
+}
+.footer .container{ 
+    padding: 10px;
+    background-color: aliceblue;
+margin-top: 100px;
 }
